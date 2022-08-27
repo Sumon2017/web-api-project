@@ -59,7 +59,7 @@ const payseller = async ( req , res ) => {
             },
             body : one_order
             }).then(response =>response.json())
-            .then(result=>{
+            .then(async result=>{
                 if(result.msg == 'success'){
                     await orders.findByIdAndUpdate(order_id,{ status:'seller paid' } ,function (err, docs) {
                         if (err){

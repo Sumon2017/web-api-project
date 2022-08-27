@@ -4,7 +4,7 @@ const transactions = require(path.join(__dirname,'..','DbSchemas','transactions'
 
 
 function make_tnx_id(length) {
-    var result           = '';
+    var result           = 'tx';
     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     var charactersLength = characters.length;
     for ( var i = 0; i < length; i++ ) {

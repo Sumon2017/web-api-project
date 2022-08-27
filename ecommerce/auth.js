@@ -14,7 +14,7 @@ const auth = async (req,res,next) => {
             res.json({
                 msg : 'expired login again'
             });
-            console.log(err);
+            console.log('expired login');
             return ;
         }
         res.locals.email=decoded.email;

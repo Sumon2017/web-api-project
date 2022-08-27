@@ -8,6 +8,7 @@ const myorders = async ( req , res ) => {
         res.json({
             msg : "you are not admin"
         });
+        return
     }
     let all_my_orders = await orders.find({});
 

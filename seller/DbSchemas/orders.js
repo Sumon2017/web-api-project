@@ -3,9 +3,7 @@ const mongoose = require('mongoose');
 let orders = new mongoose.Schema({
     email : {
         type : String,
-        required : [true,'give an email'],
         trim : true , 
-        unique : true , 
         maxLength : [50,'email should be within 50 characters'],
     },
     orderdetails : {

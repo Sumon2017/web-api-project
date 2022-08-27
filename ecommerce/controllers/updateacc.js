@@ -15,7 +15,7 @@ const updateacc = async ( req , res ) => {
                     console.log(err)
                 }
                 else{
-                    console.log("Updated User : ", docs);
+                    console.log("Updated User");
                 };
             }
 
