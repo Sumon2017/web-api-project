@@ -19,7 +19,7 @@
 
 you need to install pm2 module globally in node js  , and build-essential on linux   
 
-```
+```bash
     sudo apt install build-essential
 ```
 
