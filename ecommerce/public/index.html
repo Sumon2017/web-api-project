@@ -11,7 +11,9 @@
     
 
 <body>
-
+    <script>localStorage.clear('webapipro')</script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/placeorder.js"></script>
    <div class="header container-fluid">
 <!--       <div class="container">-->
          <div class="row first_row">
@@ -74,7 +76,7 @@
        </div>
        <div class="row rowf">
            <h1 class="heading"> <b>Shop <span>Now</span> </b></h1>
-           <img src="images/cart.png" class="cart">
+           <img src="images/cart.png" class="cart" >
            
            <label for="totalprod" class="lbl"></label>
                 <textarea id="totalprod" name="totalprod" rows="1" cols="2" class="txtarea">0</textarea>           
@@ -82,7 +84,7 @@
            <label for="totalprice" class="lbl2"></label>
                 <textarea id="totalprice" name="totalprice" rows="1" cols="3" class="txtarea">0৳</textarea>
             
-            <input type="button" class="checkout" id="checkout" name="" value="CHECKOUT" onclick="av()">
+            <input type="button" class="checkout" id="checkout" name="" value="CHECKOUT" onclick="checkout()">
        </div>
        
        <div class="row mainbox">
@@ -128,17 +130,23 @@
          
           
 <!--           <input type="button" value=" " class="plus1" id=plus1 style="background-image:url(images/bag-plus-fill.svg);background-size:100% 100%; border:none; background-repeat:no-repeat">           -->
-           <input type="button" class="add1" id="add1" name="" value="Add to Cart" onclick="av()">
-           <input type="button" value=" " class="minus1" id=minus1 style="background-image:url(images/bag-dash-fill.svg);background-size:100% 100%; border:none; background-repeat: no-repeat">
+           <input type="button" class="add1" id="add1" name="" value="Add to Cart" onclick="additem('lemon',40)">
+           <label for="lemonprod" class="lbl"></label>
+                <textarea id="lemonprod" name="totalprod" rows="1" cols="2" class="txtarea">0</textarea> 
+           <input type="button" value=" " class="minus1" id=minus1 onclick="removeitem('lemon',40)" style="background-image:url(images/bag-dash-fill.svg);background-size:100% 100%; border:none; background-repeat: no-repeat">
            
-           <input type="button" class="add2" id="add2" name="" value="Add to Cart" onclick="av()">
-           <input type="button" value=" " class="minus2" id=minus2 style="background-image:url(images/bag-dash-fill.svg);background-size:100% 100%; border:none; background-repeat: no-repeat">           
+           <input type="button" class="add2" id="add2" name="" value="Add to Cart" onclick="additem('broccoli',99)">
+           <label for="broccoliprod" class="lbl"></label>
+                <textarea id="broccoliprod" name="totalprod" rows="1" cols="2" class="txtarea">0</textarea> 
+           <input type="button" value=" " class="minus2" id=minus2 onclick="removeitem('broccoli',99)" style="background-image:url(images/bag-dash-fill.svg);background-size:100% 100%; border:none; background-repeat: no-repeat">           
            
            
            
            
-           <input type="button" class="add3" id="add3" name="" value="Add to Cart" onclick="av()">
-           <input type="button" value=" " class="minus3" id=minus3 style="background-image:url(images/bag-dash-fill.svg);background-size:100% 100%; border:none; background-repeat: no-repeat">           
+           <input type="button" class="add3" id="add3" name="" value="Add to Cart" onclick="additem('sweetpotato',25)">
+           <label for="sweetpotatoprod" class="lbl"></label>
+                <textarea id="sweetpotatoprod" name="totalprod" rows="1" cols="2" class="txtarea">0</textarea> 
+           <input type="button" value=" " class="minus3" id=minus3 onclick="removeitem('sweetpotato',25)" style="background-image:url(images/bag-dash-fill.svg);background-size:100% 100%; border:none; background-repeat: no-repeat">           
            
        </div>
        

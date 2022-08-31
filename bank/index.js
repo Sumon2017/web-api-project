@@ -13,7 +13,7 @@ let port = 3003;
 connectDB();
 
 var app = express();
-
+app.use(express.static('public'));
 app.use(bodyParser.json());
 
 app.post('/checkbalance',checkBalance)
